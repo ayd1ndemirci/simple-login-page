@@ -1,0 +1,118 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<div class="login-container">
+    <div class="login-header">Tekrar hoş geldin!</div>
+    <form class="login">
+        <input class="input" type="text" placeholder="Kullanıcı adı">
+        <input class="input" type="password" placeholder="Şifre">
+        <label class="forgot-password">Şifreni mi unuttun?</label>
+        <button class="button">Giriş Yap</button>
+        <label class="sign-up">Bir hesaba mı ihtiyacın var? <span>Kaydol</span></label>
+    </form>
+    <footer>Made by <a href="https://github.com/ayd1ndemirci" target="_blank">ayd1ndemirci</a></footer>
+</div>
+
+<style>
+    body {
+  background-color: #5865f2;
+  font-family: "Segoe UI", Georgia, Serif;
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  width: 90%; 
+  padding: 20px; 
+}
+
+.login {
+  background-color: #313338;
+  padding: 32px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 10px rgb(30, 33, 36);
+}
+
+@media only screen and (max-width: 600px) {
+  .login {
+    padding: 20px;
+  }
+  .button {
+    width: 100%;
+    margin-left: 0;
+  }
+  .sign-up {
+    margin-top: 20px;
+  }
+}
+
+.input {
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgb(30, 33, 36);
+  color: #fff;
+  width: 100%;
+  border: 0;
+  padding: 10px 10px;
+  margin: 15px -10px;
+}
+
+.button {
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  width: 80%;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: #5865f2;
+}
+
+.button:hover {
+  background-color: #404bc0;
+}
+
+.login-header {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.forgot-password {
+  color: #00a8fc;
+  cursor: pointer;
+}
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.sign-up {
+  color: #949ba4;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+}
+
+.sign-up span {
+  color: #5865f2;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin-top: auto;
+}
+</style>
